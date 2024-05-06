@@ -8,8 +8,11 @@
     </head>
 
     <body>
+        <?= $this->section('content'); ?>
+
         <div class="container">
           <h1>Login</h1>
+          <?php foreach ($tb_user as $a) : ?>
             <form>
                 <label>Username</label><br>
                 <input type="text"><br>
@@ -20,6 +23,8 @@
                   <a href="register.html">Register di sini</a>
                 </p>
             </form>
+            <?php endforeach; ?>
         </div>
+        <?= $this->endsection(); ?>
     </body>
 </html>
