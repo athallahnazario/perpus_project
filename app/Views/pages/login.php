@@ -12,17 +12,16 @@
 
         <div class="container">
           <h1>Login</h1>
-          <?php foreach ($login as $a) : ?>
             <form>
-                <label><?= $a['username'] ?></label><br>
-                <input type="text"><br>
-                <label><?= $a['password'] ?></label><br>
-                <input type="password"><br>
-                <button>Log in</button>
+                <label>username</label><br>
+                <input type="text" name="username" value="username"><br>
+                <label>password</label><br>
+                <input type="password" name="password" value="password"><br>
+                <label >Submit</label>
+               <input type="submit" name="submit" value="submit">
                 <p> Belum punya akun?
                   <a href="register.html">Register di sini</a>
                 </p>
-                <?php endforeach; ?>
             </form>
         </div>
         <?= $this->endsection(); ?>
